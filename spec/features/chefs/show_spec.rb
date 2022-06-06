@@ -48,7 +48,6 @@ describe 'chefs show page' do
   end
 
   it "displays the 3 most popular ingredients a chef uses in his dishes" do
-    visit chef_ingredients_path(@chef1)
 
     within '.popular-ingredients' do
       expect(page).to have_content("eggs")
