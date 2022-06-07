@@ -1,7 +1,7 @@
 <h2><%= @chef.name %> </h2>
 
 
-<%= link_to "Click Here to See Rob's Ingredients", chef_ingredients_path(@chef)  %>
+<%= link_to "Click Here to See #{@chef.name}'s Ingredients", chef_ingredients_path(@chef)  %>
 
 <h3> <%= @chef.name %>'s Top Ingredients: </h3>
 <div class="popular-ingredients">
